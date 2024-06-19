@@ -1,0 +1,26 @@
+xcassets:
+  inputs: AltJellyfin/Resources/Assets.xcassets
+  outputs:
+    - templatePath: Templates/Swiftgen/assets-template.stencil
+      output: AltJellyfin/Resources/Assets/Assets+Resources.swift
+      params:
+        publicAccess: 0
+        lookupFunction: 1
+#fonts:
+#  inputs: FourPaws/DesignBook/Fonts
+#  outputs:
+#  - templatePath: Templates/Swiftgen/fonts-template.stencil
+#    output: FourPaws/DesignBook/Assets/Assets+Fonts.swift
+#    params:
+#      publicAccess: 0
+#      lookupFunction: 1
+  
+#strings:
+#  - inputs: FourPaws/Resources/Localization/ru.lproj
+#    filter: (Localizable\.strings)(?:dict)*$
+#    outputs:
+#      - templatePath: Templates/Swiftgen/template.stencil
+#        output: FourPaws/Resources/Localization/Localization.swift
+#        params:
+#          publicAccess: 0
+#          lookupFunction: 1

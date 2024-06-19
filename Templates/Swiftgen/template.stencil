@@ -1,0 +1,94 @@
+// Generated using SwiftGen — https://github.com/SwiftGen/SwiftGen
+//swiftlint:disable all
+
+{% if tables.count > 0 %}
+{% set accessModifier %}{% if param.publicAccess %}public{% else %}internal{% endif %}{% endset %}
+import Foundation
+
+{% macro parametersBlock types %}{% filter removeNewlines:"leading" %}
+  {% for type in types %}
+    {% if type == "String" %}
+    _ p{{forloop.counter}}: Any
+    {% else %}
+    _ p{{forloop.counter}}: {{type}}
+    {% endif %}
+    {{ ", " if not forloop.last }}
+  {% endfor %}
+{% endfilter %}{% endmacro %}
+{% macro argumentsBlock types %}{% filter removeNewlines:"leading" %}
+  {% for type in types %}
+    {% if type == "String" %}
+    String(describing: p{{forloop.counter}})
+    {% elif type == "UnsafeRawPointer" %}
+    Int(bitPattern: p{{forloop.counter}})
+    {% else %}
+    p{{forloop.counter}}
+    {% endif %}
+    {{ ", " if not forloop.last }}
+  {% endfor %}
+{% endfilter %}{% endmacro %}
+{% macro recursiveBlock table item %}
+  {% for string in item.strings %}
+  {% if not param.noComments %}
+  {% for line in string.translation|split:"\n" %}
+    /// {{line}}
+  {% endfor %}
+  {% endif %}
+  {% if string.types %}
+    {{accessModifier}} static func {{string.name|swiftIdentifier:"pretty"|lowerFirstWord|escapeReservedKeywords}}({% call parametersBlock string.types %}) -> String {
+        return LocalizationManager.string(
+            for: "{{string.key}}",
+            table: "{{table}}",
+            in: .current,
+            {% call argumentsBlock string.types %}
+        )
+    }
+  {% elif param.lookupFunction %}
+  {# custom localization function is mostly used for in-app lang selection, so we want the loc to be recomputed at each call for those (hence the computed var) #}
+    {{accessModifier}} static var {{string.name|swiftIdentifier:"pretty"|lowerFirstWord|escapeReservedKeywords}}: String {
+        LocalizationManager.string(
+            for: "{{string.key}}",
+            table: "{{table}}",
+            in: .current
+        )
+    }
+  {% else %}
+    {{accessModifier}} static let {{string.name|swiftIdentifier:"pretty"|lowerFirstWord|escapeReservedKeywords}} = LocalizationManager.string(
+        for: "{{string.key}}",
+        table: "{{table}}",
+        in: .current
+    )
+  {% endif %}
+  {% endfor %}
+  {% for child in item.children %}
+
+    {{accessModifier}} enum {{child.name|swiftIdentifier:"pretty"|escapeReservedKeywords}} {
+    {% filter indent:4 %}{% call recursiveBlock table child %}{% endfilter %}
+    }
+  {% endfor %}
+{% endmacro %}
+{% set enumName %}{{param.enumName|default:"Localization"}}{% endset %}
+internal enum {{enumName}} {
+  {% if tables.count > 1 or param.forceFileNameEnum %}
+  {% for table in tables %}
+    {{accessModifier}} enum {{table.name|swiftIdentifier:"pretty"|escapeReservedKeywords}} {
+    {% filter indent:4 %}{% call recursiveBlock table.name table.levels %}{% endfilter %}
+    }
+  {% endfor %}
+  {% else %}
+  {% call recursiveBlock tables.first.name tables.first.levels %}
+  {% endif %}
+}
+
+// MARK: - Bundle
+
+fileprivate extension Bundle {
+    static var current: Bundle {
+        Bundle(for: BundleToken.self)
+    }
+}
+
+fileprivate final class BundleToken { }
+{% else %}
+// No string found
+{% endif %}

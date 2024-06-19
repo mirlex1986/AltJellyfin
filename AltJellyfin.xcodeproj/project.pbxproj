@@ -8,22 +8,74 @@
 
 /* Begin PBXBuildFile section */
 		5B54B40B2C21625400F69CB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54B40A2C21625400F69CB0 /* AppDelegate.swift */; };
-		5B54B40D2C21625400F69CB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54B40C2C21625400F69CB0 /* SceneDelegate.swift */; };
 		5B54B40F2C21625400F69CB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54B40E2C21625400F69CB0 /* ViewController.swift */; };
-		5B54B4122C21625400F69CB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B54B4102C21625400F69CB0 /* Main.storyboard */; };
 		5B54B4142C21625500F69CB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B54B4132C21625500F69CB0 /* Assets.xcassets */; };
 		5B54B4172C21625500F69CB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B54B4152C21625500F69CB0 /* LaunchScreen.storyboard */; };
+		5B54B4212C21642300F69CB0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54B4202C21642300F69CB0 /* NetworkManager.swift */; };
+		5B54B4232C21646700F69CB0 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54B4222C21646700F69CB0 /* Environment.swift */; };
+		5B54B4262C2167A200F69CB0 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54B4252C2167A200F69CB0 /* Router.swift */; };
+		5B54B4292C21683500F69CB0 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54B4282C21683500F69CB0 /* Transition.swift */; };
+		5B54B42C2C21699000F69CB0 /* AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54B42B2C21699000F69CB0 /* AppRoute.swift */; };
+		5B54B42E2C216A3E00F69CB0 /* LaunchScreenRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54B42D2C216A3E00F69CB0 /* LaunchScreenRoute.swift */; };
+		5B54B4302C216A8900F69CB0 /* WindowNavigationTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54B42F2C216A8900F69CB0 /* WindowNavigationTransition.swift */; };
+		5B54B4352C216B2E00F69CB0 /* DefaultAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54B4342C216B2E00F69CB0 /* DefaultAssembler.swift */; };
+		5B54B4372C216B7F00F69CB0 /* LaunchScreenAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54B4362C216B7F00F69CB0 /* LaunchScreenAssembler.swift */; };
+		5B54B43C2C216BD100F69CB0 /* LaunchScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54B43B2C216BD100F69CB0 /* LaunchScreenRouter.swift */; };
+		5B54B43E2C216BEF00F69CB0 /* LaunchScreenModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54B43D2C216BEF00F69CB0 /* LaunchScreenModule.swift */; };
+		5B54B4422C216C4500F69CB0 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54B4412C216C4500F69CB0 /* LaunchScreenViewController.swift */; };
+		5B54B4442C216C6200F69CB0 /* LaunchScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54B4432C216C6200F69CB0 /* LaunchScreenViewModel.swift */; };
+		5B54B4462C21881600F69CB0 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54B4452C21881600F69CB0 /* UserDefaultsManager.swift */; };
+		5B54B4482C2189A300F69CB0 /* ManagersAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54B4472C2189A300F69CB0 /* ManagersAssembler.swift */; };
+		5B54B44C2C221F1300F69CB0 /* AuthScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54B44B2C221F1300F69CB0 /* AuthScreenViewController.swift */; };
+		5B54B44F2C221F5400F69CB0 /* AJViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54B44E2C221F5400F69CB0 /* AJViewController.swift */; };
+		5B54B4522C22202400F69CB0 /* AuthScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54B4512C22202400F69CB0 /* AuthScreenViewModel.swift */; };
+		5B54B4552C22206100F69CB0 /* AuthScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54B4542C22206100F69CB0 /* AuthScreenRouter.swift */; };
+		5B54B4572C22209B00F69CB0 /* AuthScreenAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54B4562C22209B00F69CB0 /* AuthScreenAssembler.swift */; };
+		5B54B4592C2220B700F69CB0 /* AuthScreenModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54B4582C2220B700F69CB0 /* AuthScreenModule.swift */; };
+		5B54B45B2C22219100F69CB0 /* AuthScreenRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54B45A2C22219100F69CB0 /* AuthScreenRoute.swift */; };
+		5B54B4622C222A2600F69CB0 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54B4612C222A2600F69CB0 /* Assets.swift */; };
+		5B54B4672C222C2400F69CB0 /* Assets+Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54B4662C222C2400F69CB0 /* Assets+Resources.swift */; };
+		5B54B4692C22D2D000F69CB0 /* ColorAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54B4682C22D2D000F69CB0 /* ColorAsset.swift */; };
+		5B54B46B2C22D30D00F69CB0 /* ImageAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54B46A2C22D30D00F69CB0 /* ImageAsset.swift */; };
+		5B54B46E2C22DCCC00F69CB0 /* AJButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54B46D2C22DCCC00F69CB0 /* AJButton.swift */; };
+		5B54B4712C22DDF600F69CB0 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54B4702C22DDF600F69CB0 /* UIView + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5B54B4072C21625400F69CB0 /* AltJellyfin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AltJellyfin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B54B40A2C21625400F69CB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5B54B40C2C21625400F69CB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5B54B40E2C21625400F69CB0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5B54B4112C21625400F69CB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5B54B4132C21625500F69CB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B54B4162C21625500F69CB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B54B4182C21625500F69CB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B54B4202C21642300F69CB0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		5B54B4222C21646700F69CB0 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		5B54B4252C2167A200F69CB0 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		5B54B4282C21683500F69CB0 /* Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		5B54B42B2C21699000F69CB0 /* AppRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
+		5B54B42D2C216A3E00F69CB0 /* LaunchScreenRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenRoute.swift; sourceTree = "<group>"; };
+		5B54B42F2C216A8900F69CB0 /* WindowNavigationTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowNavigationTransition.swift; sourceTree = "<group>"; };
+		5B54B4342C216B2E00F69CB0 /* DefaultAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAssembler.swift; sourceTree = "<group>"; };
+		5B54B4362C216B7F00F69CB0 /* LaunchScreenAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenAssembler.swift; sourceTree = "<group>"; };
+		5B54B43B2C216BD100F69CB0 /* LaunchScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenRouter.swift; sourceTree = "<group>"; };
+		5B54B43D2C216BEF00F69CB0 /* LaunchScreenModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenModule.swift; sourceTree = "<group>"; };
+		5B54B4412C216C4500F69CB0 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		5B54B4432C216C6200F69CB0 /* LaunchScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewModel.swift; sourceTree = "<group>"; };
+		5B54B4452C21881600F69CB0 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		5B54B4472C2189A300F69CB0 /* ManagersAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagersAssembler.swift; sourceTree = "<group>"; };
+		5B54B44B2C221F1300F69CB0 /* AuthScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScreenViewController.swift; sourceTree = "<group>"; };
+		5B54B44E2C221F5400F69CB0 /* AJViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AJViewController.swift; sourceTree = "<group>"; };
+		5B54B4512C22202400F69CB0 /* AuthScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScreenViewModel.swift; sourceTree = "<group>"; };
+		5B54B4542C22206100F69CB0 /* AuthScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScreenRouter.swift; sourceTree = "<group>"; };
+		5B54B4562C22209B00F69CB0 /* AuthScreenAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScreenAssembler.swift; sourceTree = "<group>"; };
+		5B54B4582C2220B700F69CB0 /* AuthScreenModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScreenModule.swift; sourceTree = "<group>"; };
+		5B54B45A2C22219100F69CB0 /* AuthScreenRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScreenRoute.swift; sourceTree = "<group>"; };
+		5B54B4612C222A2600F69CB0 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		5B54B4662C222C2400F69CB0 /* Assets+Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assets+Resources.swift"; sourceTree = "<group>"; };
+		5B54B4682C22D2D000F69CB0 /* ColorAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorAsset.swift; sourceTree = "<group>"; };
+		5B54B46A2C22D30D00F69CB0 /* ImageAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAsset.swift; sourceTree = "<group>"; };
+		5B54B46D2C22DCCC00F69CB0 /* AJButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AJButton.swift; sourceTree = "<group>"; };
+		5B54B4702C22DDF600F69CB0 /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +108,201 @@
 		5B54B4092C21625400F69CB0 /* AltJellyfin */ = {
 			isa = PBXGroup;
 			children = (
+				5B54B46F2C22DDE200F69CB0 /* Extensions */,
+				5B54B44D2C221F3B00F69CB0 /* Common */,
+				5B54B4332C216B1500F69CB0 /* Assemblers */,
+				5B54B4312C216ABE00F69CB0 /* Scenes */,
+				5B54B4242C21678F00F69CB0 /* Routing */,
+				5B54B41F2C21633400F69CB0 /* Managers */,
+				5B54B41E2C21631B00F69CB0 /* Data */,
+				5B54B4602C2229F000F69CB0 /* Resources */,
 				5B54B40A2C21625400F69CB0 /* AppDelegate.swift */,
-				5B54B40C2C21625400F69CB0 /* SceneDelegate.swift */,
 				5B54B40E2C21625400F69CB0 /* ViewController.swift */,
-				5B54B4102C21625400F69CB0 /* Main.storyboard */,
-				5B54B4132C21625500F69CB0 /* Assets.xcassets */,
 				5B54B4152C21625500F69CB0 /* LaunchScreen.storyboard */,
 				5B54B4182C21625500F69CB0 /* Info.plist */,
 			);
 			path = AltJellyfin;
+			sourceTree = "<group>";
+		};
+		5B54B41E2C21631B00F69CB0 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5B54B4222C21646700F69CB0 /* Environment.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		5B54B41F2C21633400F69CB0 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				5B54B4202C21642300F69CB0 /* NetworkManager.swift */,
+				5B54B4452C21881600F69CB0 /* UserDefaultsManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		5B54B4242C21678F00F69CB0 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				5B54B42A2C21697900F69CB0 /* ScenesRoutes */,
+				5B54B4272C21681E00F69CB0 /* Transitions */,
+				5B54B4252C2167A200F69CB0 /* Router.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		5B54B4272C21681E00F69CB0 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				5B54B4282C21683500F69CB0 /* Transition.swift */,
+				5B54B42F2C216A8900F69CB0 /* WindowNavigationTransition.swift */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		5B54B42A2C21697900F69CB0 /* ScenesRoutes */ = {
+			isa = PBXGroup;
+			children = (
+				5B54B42B2C21699000F69CB0 /* AppRoute.swift */,
+				5B54B42D2C216A3E00F69CB0 /* LaunchScreenRoute.swift */,
+				5B54B45A2C22219100F69CB0 /* AuthScreenRoute.swift */,
+			);
+			path = ScenesRoutes;
+			sourceTree = "<group>";
+		};
+		5B54B4312C216ABE00F69CB0 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				5B54B4492C221ECA00F69CB0 /* Auth */,
+				5B54B4322C216AE300F69CB0 /* LaunchScreen */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		5B54B4322C216AE300F69CB0 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				5B54B43A2C216BAF00F69CB0 /* Router */,
+				5B54B4392C216BA800F69CB0 /* ViewModel */,
+				5B54B4382C216BA100F69CB0 /* View */,
+				5B54B4362C216B7F00F69CB0 /* LaunchScreenAssembler.swift */,
+				5B54B43D2C216BEF00F69CB0 /* LaunchScreenModule.swift */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		5B54B4332C216B1500F69CB0 /* Assemblers */ = {
+			isa = PBXGroup;
+			children = (
+				5B54B4342C216B2E00F69CB0 /* DefaultAssembler.swift */,
+				5B54B4472C2189A300F69CB0 /* ManagersAssembler.swift */,
+			);
+			path = Assemblers;
+			sourceTree = "<group>";
+		};
+		5B54B4382C216BA100F69CB0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5B54B4412C216C4500F69CB0 /* LaunchScreenViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5B54B4392C216BA800F69CB0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5B54B4432C216C6200F69CB0 /* LaunchScreenViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5B54B43A2C216BAF00F69CB0 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5B54B43B2C216BD100F69CB0 /* LaunchScreenRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		5B54B4492C221ECA00F69CB0 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				5B54B4532C22204600F69CB0 /* Router */,
+				5B54B4502C221FFF00F69CB0 /* ViewModel */,
+				5B54B44A2C221EFB00F69CB0 /* View */,
+				5B54B4562C22209B00F69CB0 /* AuthScreenAssembler.swift */,
+				5B54B4582C2220B700F69CB0 /* AuthScreenModule.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		5B54B44A2C221EFB00F69CB0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5B54B44B2C221F1300F69CB0 /* AuthScreenViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5B54B44D2C221F3B00F69CB0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5B54B46C2C22D49800F69CB0 /* Views */,
+				5B54B44E2C221F5400F69CB0 /* AJViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		5B54B4502C221FFF00F69CB0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5B54B4512C22202400F69CB0 /* AuthScreenViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5B54B4532C22204600F69CB0 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5B54B4542C22206100F69CB0 /* AuthScreenRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		5B54B4602C2229F000F69CB0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5B54B4652C222BEB00F69CB0 /* Assets */,
+				5B54B4132C21625500F69CB0 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5B54B4652C222BEB00F69CB0 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				5B54B4612C222A2600F69CB0 /* Assets.swift */,
+				5B54B4662C222C2400F69CB0 /* Assets+Resources.swift */,
+				5B54B4682C22D2D000F69CB0 /* ColorAsset.swift */,
+				5B54B46A2C22D30D00F69CB0 /* ImageAsset.swift */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		5B54B46C2C22D49800F69CB0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B54B46D2C22DCCC00F69CB0 /* AJButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5B54B46F2C22DDE200F69CB0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5B54B4702C22DDF600F69CB0 /* UIView + Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +312,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B54B41B2C21625500F69CB0 /* Build configuration list for PBXNativeTarget "AltJellyfin" */;
 			buildPhases = (
+				5B54B45F2C22297C00F69CB0 /* ShellScript */,
 				5B54B4032C21625400F69CB0 /* Sources */,
 				5B54B4042C21625400F69CB0 /* Frameworks */,
 				5B54B4052C21625400F69CB0 /* Resources */,
@@ -127,34 +366,73 @@
 			files = (
 				5B54B4172C21625500F69CB0 /* LaunchScreen.storyboard in Resources */,
 				5B54B4142C21625500F69CB0 /* Assets.xcassets in Resources */,
-				5B54B4122C21625400F69CB0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5B54B45F2C22297C00F69CB0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PROJECT_DIR}/swiftgen/bin/swiftgen\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5B54B4032C21625400F69CB0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B54B4292C21683500F69CB0 /* Transition.swift in Sources */,
+				5B54B45B2C22219100F69CB0 /* AuthScreenRoute.swift in Sources */,
+				5B54B4352C216B2E00F69CB0 /* DefaultAssembler.swift in Sources */,
+				5B54B4522C22202400F69CB0 /* AuthScreenViewModel.swift in Sources */,
+				5B54B44C2C221F1300F69CB0 /* AuthScreenViewController.swift in Sources */,
+				5B54B42C2C21699000F69CB0 /* AppRoute.swift in Sources */,
+				5B54B4302C216A8900F69CB0 /* WindowNavigationTransition.swift in Sources */,
+				5B54B4212C21642300F69CB0 /* NetworkManager.swift in Sources */,
+				5B54B4712C22DDF600F69CB0 /* UIView + Extension.swift in Sources */,
+				5B54B4622C222A2600F69CB0 /* Assets.swift in Sources */,
+				5B54B43C2C216BD100F69CB0 /* LaunchScreenRouter.swift in Sources */,
+				5B54B4462C21881600F69CB0 /* UserDefaultsManager.swift in Sources */,
 				5B54B40F2C21625400F69CB0 /* ViewController.swift in Sources */,
 				5B54B40B2C21625400F69CB0 /* AppDelegate.swift in Sources */,
-				5B54B40D2C21625400F69CB0 /* SceneDelegate.swift in Sources */,
+				5B54B4442C216C6200F69CB0 /* LaunchScreenViewModel.swift in Sources */,
+				5B54B46B2C22D30D00F69CB0 /* ImageAsset.swift in Sources */,
+				5B54B4672C222C2400F69CB0 /* Assets+Resources.swift in Sources */,
+				5B54B4552C22206100F69CB0 /* AuthScreenRouter.swift in Sources */,
+				5B54B43E2C216BEF00F69CB0 /* LaunchScreenModule.swift in Sources */,
+				5B54B4422C216C4500F69CB0 /* LaunchScreenViewController.swift in Sources */,
+				5B54B44F2C221F5400F69CB0 /* AJViewController.swift in Sources */,
+				5B54B46E2C22DCCC00F69CB0 /* AJButton.swift in Sources */,
+				5B54B4592C2220B700F69CB0 /* AuthScreenModule.swift in Sources */,
+				5B54B4572C22209B00F69CB0 /* AuthScreenAssembler.swift in Sources */,
+				5B54B42E2C216A3E00F69CB0 /* LaunchScreenRoute.swift in Sources */,
+				5B54B4692C22D2D000F69CB0 /* ColorAsset.swift in Sources */,
+				5B54B4262C2167A200F69CB0 /* Router.swift in Sources */,
+				5B54B4232C21646700F69CB0 /* Environment.swift in Sources */,
+				5B54B4372C216B7F00F69CB0 /* LaunchScreenAssembler.swift in Sources */,
+				5B54B4482C2189A300F69CB0 /* ManagersAssembler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5B54B4102C21625400F69CB0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5B54B4112C21625400F69CB0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5B54B4152C21625500F69CB0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -203,7 +481,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -266,7 +544,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -297,9 +575,8 @@
 				INFOPLIST_FILE = AltJellyfin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,9 +602,8 @@
 				INFOPLIST_FILE = AltJellyfin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
