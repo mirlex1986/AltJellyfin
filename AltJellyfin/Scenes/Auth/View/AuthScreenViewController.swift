@@ -31,6 +31,8 @@ final class AuthScreenViewController: AJViewController {
         view.backgroundColor = .white
         return view
     }()
+    
+    private let confirmButton = AJButton(options: [.style(type: .disabled), .title("Подключиться")])
 
     private var viewModel: AuthScreenViewModel
 
@@ -71,6 +73,7 @@ private extension AuthScreenViewController {
         vStackView.addArrangedSubview(addressTF)
         vStackView.addArrangedSubview(userNameTF)
         vStackView.addArrangedSubview(passwordTF)
+        vStackView.addArrangedSubview(confirmButton)
     }
 
     func setupConstraints() {
