@@ -8,6 +8,12 @@ extension Assets {
     /// Color named `AccentColor`
     internal static let accentColor = ColorAsset(named: "AccentColor")
     internal enum Colors {
+        internal enum TextField {
+            /// Color named `background`
+            internal static let background = ColorAsset(named: "background")
+            /// Color named `blueBorder`
+            internal static let blueBorder = ColorAsset(named: "blueBorder")
+        }
         /// Color named `appBackground`
         internal static let appBackground = ColorAsset(named: "appBackground")
         /// Color named `appHeader`
