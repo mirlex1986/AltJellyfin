@@ -1,16 +1,17 @@
-//
-//  UIView + Extension.swift
-//  AltJellyfin
-//
-//  Created by Aleksey Mironov on 19.06.2024.
-//
-
 import UIKit
 
 extension UIView {
     func setCornerRadius(_ radius: CGFloat) {
         clipsToBounds = true
         layer.cornerRadius = radius
+    }
+    
+    func addSubviews(_ views: UIView...) {
+        addSubviews(views)
+    }
+
+    func addSubviews(_ views: [UIView]) {
+        views.forEach { addSubview($0) }
     }
 }
 

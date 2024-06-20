@@ -39,6 +39,8 @@
 		5B54B46B2C22D30D00F69CB0 /* ImageAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54B46A2C22D30D00F69CB0 /* ImageAsset.swift */; };
 		5B54B46E2C22DCCC00F69CB0 /* AJButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54B46D2C22DCCC00F69CB0 /* AJButton.swift */; };
 		5B54B4712C22DDF600F69CB0 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54B4702C22DDF600F69CB0 /* UIView + Extension.swift */; };
+		5B54B4732C23680000F69CB0 /* AJInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54B4722C23680000F69CB0 /* AJInputView.swift */; };
+		5B54B4752C236D3100F69CB0 /* Optional + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54B4742C236D3100F69CB0 /* Optional + Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +78,8 @@
 		5B54B46A2C22D30D00F69CB0 /* ImageAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAsset.swift; sourceTree = "<group>"; };
 		5B54B46D2C22DCCC00F69CB0 /* AJButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AJButton.swift; sourceTree = "<group>"; };
 		5B54B4702C22DDF600F69CB0 /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
+		5B54B4722C23680000F69CB0 /* AJInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AJInputView.swift; sourceTree = "<group>"; };
+		5B54B4742C236D3100F69CB0 /* Optional + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional + Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -293,6 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				5B54B46D2C22DCCC00F69CB0 /* AJButton.swift */,
+				5B54B4722C23680000F69CB0 /* AJInputView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -301,6 +306,7 @@
 			isa = PBXGroup;
 			children = (
 				5B54B4702C22DDF600F69CB0 /* UIView + Extension.swift */,
+				5B54B4742C236D3100F69CB0 /* Optional + Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -417,8 +423,10 @@
 				5B54B4552C22206100F69CB0 /* AuthScreenRouter.swift in Sources */,
 				5B54B43E2C216BEF00F69CB0 /* LaunchScreenModule.swift in Sources */,
 				5B54B4422C216C4500F69CB0 /* LaunchScreenViewController.swift in Sources */,
+				5B54B4732C23680000F69CB0 /* AJInputView.swift in Sources */,
 				5B54B44F2C221F5400F69CB0 /* AJViewController.swift in Sources */,
 				5B54B46E2C22DCCC00F69CB0 /* AJButton.swift in Sources */,
+				5B54B4752C236D3100F69CB0 /* Optional + Extensions.swift in Sources */,
 				5B54B4592C2220B700F69CB0 /* AuthScreenModule.swift in Sources */,
 				5B54B4572C22209B00F69CB0 /* AuthScreenAssembler.swift in Sources */,
 				5B54B42E2C216A3E00F69CB0 /* LaunchScreenRoute.swift in Sources */,

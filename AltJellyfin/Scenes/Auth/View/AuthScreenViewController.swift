@@ -11,24 +11,21 @@ final class AuthScreenViewController: AJViewController {
         return view
     }()
     
-    private let addressTF: UITextField = {
-        let view = UITextField()
-        view.placeholder = "address"
-        view.backgroundColor = .white
+    private let addressInput: AJInputView = {
+        let view = AJInputView()
+        view.configure(type: .serverAddress, string: nil)
         return view
     }()
     
-    private let userNameTF: UITextField = {
-        let view = UITextField()
-        view.placeholder = "userName"
-        view.backgroundColor = .white
+    private let userInput: AJInputView = {
+        let view = AJInputView()
+        view.configure(type: .name, string: nil)
         return view
     }()
     
-    private let passwordTF: UITextField = {
-        let view = UITextField()
-        view.placeholder = "password"
-        view.backgroundColor = .white
+    private let passwordInput: AJInputView = {
+        let view = AJInputView()
+        view.configure(type: .password, string: nil)
         return view
     }()
     
@@ -40,9 +37,6 @@ final class AuthScreenViewController: AJViewController {
         self.viewModel = dependencies.viewModel
         super.init()
     }
-
-    @available(*, unavailable)
-    required init?(coder: NSCoder) { nil }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,9 +64,9 @@ private extension AuthScreenViewController {
         view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
         
         view.addSubview(vStackView)
-        vStackView.addArrangedSubview(addressTF)
-        vStackView.addArrangedSubview(userNameTF)
-        vStackView.addArrangedSubview(passwordTF)
+        vStackView.addArrangedSubview(addressInput)
+        vStackView.addArrangedSubview(userInput)
+        vStackView.addArrangedSubview(passwordInput)
         vStackView.addArrangedSubview(confirmButton)
     }
 
